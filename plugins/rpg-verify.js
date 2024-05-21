@@ -1,39 +1,32 @@
 import { createHash } from 'crypto'
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
-  let user = global.db.data.users[m.sender]
+let user = db.data.users[m.sender]
+let totalreg = Object.keys(global.db.data.users).length
+let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
   let name2 = conn.getName(m.sender)
-  if (user.registered === true) throw `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *Ya ᥱs𝗍ᥲ́s registrado*\n\n¿𝗊ᥙіᥱrᥱ ᥎᥆ᥣ᥎ᥱr ᥲ rᥱgіs𝗍rᥲrsᥱ?\n\n💬 ᥙsᥱ ᥱs𝗍ᥱ ᥴ᥆mᥲᥒძ᥆ para *eliminar su registro*\n*${usedPrefix}unreg* <ᥒᥙ́mᥱr᥆ ძᥱ serie>`
-  if (!Reg.test(text)) throw `🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *𝖿᥆rmᥲ𝗍᥆ іᥒᥴ᥆rrᥱᥴ𝗍᥆*\n\n📝 ᥙs᥆ ძᥱᥣ ᥴ᥆mᥲᥒძ᥆: *${usedPrefix + command} nombre.edad*\n [ 💡 ] ᥱȷᥱm⍴ᥣ᥆ : *${usedPrefix + command}* ${name2}.18`
+  if (user.registered === true) throw `𝒀𝒂 𝑻𝒆 𝑬𝒏𝒄𝒖𝒆𝒏𝒕𝒓𝒂𝒔 𝑬𝒏 𝑴𝒊 𝑩𝒂𝒔𝒆 𝑫𝒆 𝑫𝒂𝒕𝒐𝒔 🔮`
+  if (!Reg.test(text)) throw `𝐔𝐬𝐨 𝐃𝐞𝐥 𝐂𝐨𝐦𝐚𝐧𝐝𝐨:\n- *${usedPrefix + command} nombre.edad*\n🎌 𝐄𝐣𝐞𝐦𝐩𝐥𝐨:\n- *${usedPrefix + command}* ${name2}.16`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) throw '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱᥣ ᥒ᥆mᑲrᥱ ᥒ᥆ ⍴ᥙᥱძᥱ ᥱs𝗍ᥲr ᥎ᥲᥴі́᥆*'
-  if (!age) throw '🚫 𝐄𝐑𝐑𝐎𝐑 🚫 *ᥣᥲ ᥱძᥲძ ᥒ᥆ ⍴ᥙᥱძᥱᥱ ᥱs𝗍ᥲr ᥎ᥲᥴі́ᥲ*'
-  if (name.length >= 30) throw '*🚫 𝐄𝐑𝐑𝐎𝐑 🚫 ᥱᥣ ᥒ᥆mᑲrᥱ es ძᥱmᥲsіᥲძ᥆ largo*' 
+  if (!name) throw '🚩 𝑬𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒆𝒔𝒕𝒂𝒓 𝒗𝒂𝒄𝒊𝒐'
+  if (!age) throw '🚩 𝑳𝒂 𝒆𝒅𝒂𝒅 𝒏𝒐 𝒑𝒖𝒆𝒅𝒆 𝒆𝒔𝒕𝒂𝒓 𝒗𝒂𝒄𝒊𝒂'
+  if (name.length >= 30) throw '💫 𝑬𝒍 𝒏𝒐𝒎𝒃𝒓𝒆 𝒆𝒔 𝒎𝒖𝒚 𝒍𝒂𝒓𝒈𝒐, 𝒘𝒂𝒐𝒛' 
   age = parseInt(age)
-  if (age > 100) throw '*Pellé quiere jugar con el bot?*'
-  if (age < 5) throw '*Eres menor, no  puedes registrarte en BaileyBot-MD*'
+  if (age > 100) throw '😊 𝑬𝒍 𝑨𝒃𝒖𝒆𝒍𝒐 𝑸𝒖𝒊𝒔𝒐 𝑱𝒖𝒈𝒂𝒓 𝑯𝒂 𝑳𝒂 𝑩𝒐𝒕'
+  if (age < 5) throw '✏️ 𝑭𝒖𝒂𝒂 𝒖𝒏 𝒃𝒆𝒃𝒆́ 𝒔𝒂𝒃𝒆 𝒆𝒔𝒄𝒓𝒊𝒃𝒊𝒓? '
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
-  m.reply(`
-┏━━━━━━━━━━━━━━━━┓
-┃ *𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙾* 
-┃━━━━━━━━━━━━━━━━┛
-┃ *𝙽𝙾𝙼𝙱𝚁𝙴:* ${name}
-┃ *𝙴𝙳𝙰𝙳* : ${age} años
-┃ *𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴 𝚂𝙴𝚁𝙸𝙴*:
-┃${sn}
-┃━━━━━━━━━━━━━━━━━━┓
-┃ *${usedPrefix}𝙼𝙴𝙽𝚄*
-┃ *𝙿𝙰𝚁𝙰 𝚅𝙴𝚁 𝙴𝙻 𝙼𝙴𝙽𝚄́*
-┗━━━━━━━━━━━━━━━━━━┛
-`.trim())
-}
-handler.help = ['reg'].map(v => v + ' <nombre.edad>')
-handler.tags = ['rg']
+  await conn.reply(m.chat,  `🍂 R E G I S T R O 📇
 
-handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar'] 
-
+• 🌺 𝖢𝗅𝗂𝖾𝗇𝗍𝖾: ${name}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+• 🍃 𝖤𝖽𝖺𝖽: ${age} 𝖠𝗇̃𝗈𝗌
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈`, fkontak, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: '📩  R E G I S T R O  📩', body: packname, previewType: 0, thumbnail: imagen6, sourceUrl: [channel, md, yt, fb].getRandom()}}})
+await m.reply(`${sn}`)}
+handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
+handler.tags = ['xp']
+handler.command = /^(verify|verificar|registrar|reg(ister)?)$/i
 export default handler
