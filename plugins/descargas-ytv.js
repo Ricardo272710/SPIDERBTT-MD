@@ -38,7 +38,7 @@ m.react(error)}}
 }
 handler.help = ['ytv']
 handler.tags = ['descargas']
-handler.command = /^fgmp4|ytpm4|getvid|yt(v|mp4)?$/i
+handler.command = /^ytmp4|ytpm4|getvid|yt(v|mp4)?$/i
 
 handler.register = true
 handler.limit = true
