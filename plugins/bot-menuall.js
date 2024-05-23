@@ -171,7 +171,7 @@ await conn.reply(m.chat, '✰【𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐄𝐥 𝐌�
     let pp1 = 'https://telegra.ph/file/33d3e7b5d8d455e03136c.mp4'
     let pp2 = 'https://telegra.ph/file/ea6aba5e9c5b92105d911.mp4'
 
-    m.react('🪷') 
+    m.react('🌸') 
     conn.sendMessage(m.chat, { video: { url: [pp1, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m }) 
 
   } catch (e) { 
