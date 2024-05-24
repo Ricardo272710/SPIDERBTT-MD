@@ -21,7 +21,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
  let speed = neww - old 
  let info = `┏━━━━━━━━━━━━━━━━━
 ┃ ꨄ *CREADOR* 
-┃ *Jxtxn17*
+┃ *Enzito*
  
 ┃  ꨄ *CONTACTO*  
 ┃  *${ig}*
@@ -57,7 +57,7 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 ┃ ${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━
 `.trim()  
-  conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: 'BaileyBot-MD 🗿', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
+  conn.sendMessage(m.chat, { text: info, contextInfo: { externalAdReply: { title: '', body: 'DiablaBot-MD🌹', thumbnail: imagen2, sourceUrl: '', mediaType: 1, renderLargerThumbnail: true }}})
  } 
  handler.help = ['infobot', 'speed'] 
  handler.tags = ['main'] 
