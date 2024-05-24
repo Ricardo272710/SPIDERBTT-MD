@@ -10,7 +10,7 @@ let handler = m => m
  let uptime = clockString(_uptime) 
  let bio = `${global.wm} ║
  ${uptime}
-.estado .menu .jadibot. .owner ║ 𝙱𝚢 𝙹𝚡𝚝𝚡𝚗𝟷𝟽` 
+.estado .menu .jadibot. .owner ║ 𝐁𝐲 𝐄𝐧𝐳𝐢𝐭𝐨19` 
  await this.updateProfileStatus(bio).catch(_ => _) 
  setting.status = new Date() * 1 
  }  
