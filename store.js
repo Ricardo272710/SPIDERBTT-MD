@@ -44,10 +44,10 @@ global.ImgAll = [img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img1
 //Enlaces
 global.yt = 'https://www.youtube.com/@Azami_Mods'
 global.ig = 'https://www.instagram.com/b.jxtxn17'
-global.md = 'https://github.com/EnzoVaselevich/DIABLABOT-MD-OFC-'
+global.md = 'https://github.com/elias1524/Goku-Black-Bot-MD'
 global.paypal = '+595972157130'
-global.git = 'https://github.com/Jxtxn17'
-global.nn = 'https://chat.whatsapp.com/LhlBSyakvI3GjGSvFTa1hh' //Grupo ofc
+global.git = 'https://github.com/elias1524'
+global.nn = 'https://chat.whatsapp.com/Igsky5kNI7cDMsBJU6gcKB' //Grupo ofc
 global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosity OFC
 global.hachiko = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //Hachiko OFC
 global.Lobo = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd' //Lobo OFC
