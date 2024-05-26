@@ -25,10 +25,10 @@ global.prems = []
 global.isdev = [ /* ['5217294888993'], */ ['5214434703586'], ['5492266466080'], ['5492266613038'], ['573012482597'], ['5215610314499'], ['51935531943'], ['33760536110'], ['5492964650915'], ['50558124470'], ['573012482597']]
 
 global.packname = '🌸 Goku-Black-Bot-MD🐼'
-global.author = 'Ivan'
+global.author = '⺪⃢łV₳₦🇵🇾⃢乂'
 global.wm = '🌼 Goku-Black-Bot-MD 🍧'
 global.wm2 = '🍁 Goku-Black-Bot-MD 🌸'
-global.jxtxn = 'Ivan'
+global.jxtxn = '⺪⃢łV₳₦🇵🇾⃢乂'
 global.cb = '🌸 Goku-Black-Bot-MD 💖'
 
 global.vs = '1.0.2'
@@ -36,7 +36,7 @@ global.library = 'Baileys'
 global.baileys = '@whiskeysockets/baileys'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
-global.dev = 'BY IVAN.OFC'
+global.dev = 'BY ⺪⃢łV₳₦🇵🇾⃢乂'
 global.devnum = '+595972157130'
 
 let file = fileURLToPath(import.meta.url)
