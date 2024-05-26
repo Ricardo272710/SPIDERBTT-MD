@@ -22,20 +22,20 @@ global.prems = []
 //Solo desarrolladores aprobados
 global.isdev = [ /* ['5217294888993'], */ ['5214434703586'], ['5492266466080'], ['5492266613038'], ['573012482597'], ['5215610314499'], ['51935531943'], ['33760536110'], ['5492964650915'], ['50558124470'], ['573012482597']]
 
-global.packname = '🌸 ᴰⁱᵃᵇˡⁱᵗᵃᴮᵒᵗ⁻ᴹᴰ 🐼'
-global.author = 'Enzito'
-global.wm = '🌼 𝕯𝖎𝖆𝖇𝖑𝖆-𝕭𝖔𝖙-𝕸𝕯 🍧'
-global.wm2 = '🍁 𝒟𝒾𝒶𝒷𝓁𝒶 - 𝐵𝑜𝓉 - 𝑀𝒟 🌸'
-global.jxtxn = 'Enzito'
-global.cb = '🌸 ᴅɪᴀʙʟᴀʙᴏᴛ-ᴍᴅ 💖'
+global.packname = '🌸 Goku-Black-Bot-MD🐼'
+global.author = 'Ivan'
+global.wm = '🌼 Goku-Black-Bot-MD 🍧'
+global.wm2 = '🍁 Goku-Black-Bot-MD 🌸'
+global.jxtxn = 'Ivan'
+global.cb = '🌸 Goku-Black-Bot-MD 💖'
 
 global.vs = '1.0.2'
 global.library = 'Baileys'
 global.baileys = '@whiskeysockets/baileys'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
-global.dev = 'ʙʏ ᴱⁿᶻᵒ.ᴏғᴄ'
-global.devnum = '+51929972576'
+global.dev = 'BY IVAN.OFC'
+global.devnum = '+595972157130'
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => { unwatchFile(file)
