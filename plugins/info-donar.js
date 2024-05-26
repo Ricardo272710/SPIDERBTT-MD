@@ -2,14 +2,15 @@ var handler = async (m, { conn, command }) => {
 
 let str = `🚩 *Donar*
 *Puedes donar números comunicandote con el dueño del bot*
-⬡ *PAYPAL*
+⬡ *Para donar números 👇*
 ${paypal}
 
 ⬡ *Creador del bot*
 wa.me/51929972576
 
 _Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
-https://github.com/Jxtxn17/BaileyBot-MD`
+https://github.com/Jxtxn17/BaileyBot-MD
+*By Axx*`
 
 conn.reply(m.chat, str, m, fake, )
 
