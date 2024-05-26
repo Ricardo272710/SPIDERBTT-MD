@@ -1,4 +1,4 @@
-Hola Bienvenido 😊
+Hola Bienvenidos 😊
 Soy Black Propietario del bot ✨
 Nueva versión del bot 👾 
 Si te gusta puedes dejarme una 🌟 para más proyectos 😉 
