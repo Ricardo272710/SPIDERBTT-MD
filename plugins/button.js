@@ -8,6 +8,7 @@ await conn.sendButton(m.chat, text, `🧸 ¿Comó estás? ` + nombre, foto,[
 ['ꨄ 𝐃𝐞𝐬𝐚𝐫𝐫𝐨𝐲𝐚𝐝𝐨𝐫𝐞𝐬 ✨', '#owner'],
 ['ꨄ 𝐃𝐢𝐚𝐛𝐥𝐚𝐁𝐨𝐭 💥', '.bot Hola']], null, [
 ['ꨄ Canal Oficial', `${channel}`]], m)}
+'Creditos a diego'
 handler.customPrefix = /Ivancito|Ivan/i;
 handler.command = new RegExp;
 export default handler;
