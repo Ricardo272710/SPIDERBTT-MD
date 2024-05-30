@@ -8,22 +8,23 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
         //const url = 'https://www.youtube.com/watch?v=' + videoId
         m.react('🎧')
-        let play = `
-        ≡ ${wm}
-> ┌──────────────
-> 📌 *Título* : ${title}
-> 📆 *Publicado:* ${ago}
-> ⌚ *Duración:* ${timestamp}
-> 👀 *Vistas:* ${views}
-> └──────────────`
+        let play = `┏━━━━━━━━━━━━━━━━━━━
+ 📌 *Título* : ${title}
+┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━   
+ 📆 *Publicado:* ${ago}
+┃━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
+ ⌚ *Duración:* ${timestamp}
+┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
+ 👀 *Vistas:* ${views}
+┗━━━━━━━━━━━━━━━━━━━`
  await conn.sendButton(m.chat, play, fgig, thumbnail, [
     ['🍧 MP3', `${usedPrefix}fgmp3 ${url}`],
     ['🍿 MP4', `${usedPrefix}fgmp4 ${url}`]
-  ], m, fake)
+  ], m)
 }
 handler.help = ['bot']
 handler.tags = ['descargas']
-handler.command = ['play', 'play']
+handler.command = ['play', 'playqq']
 //handler.disabled = true
 
 export default handler
