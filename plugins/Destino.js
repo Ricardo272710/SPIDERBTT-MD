@@ -1,5 +1,5 @@
 const handler = async (m, {conn, text}) => {
-  m.reply(`*TU DESTINO SERA*`);
+  m.reply(`*TU DESTINO SERA ${pickRandom(global.piropo)}*`);
 };
 handler.tags = ['Destino'];
 handler.command = ['destino'];
