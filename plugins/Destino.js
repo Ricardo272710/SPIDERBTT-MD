@@ -10,4 +10,4 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())];
 }
 
-global.destino = ['PRONTO SERAS RICO', 'Todo se puede'];
+global.destino = ['Pronto serás rico', 'Con dios todo se puede', 'Solo confía en ti mismo'];
