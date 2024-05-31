@@ -8,6 +8,6 @@ let aa = { quoted: m, userJid: conn.user.jid }
 let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: texto, contextInfo: { externalAdReply: { title: 'STAFF', body: null, thumbnail: imagen1, sourceUrl: '' }, mentionedJid: [m.sender] }}}, aa)
 conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id, mentions: [m.sender] })  
 }
-handler.command = /^(Pais)/i
+handler.command = /^(Staff)/i
 handler.register = true
 export default handler
