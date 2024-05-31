@@ -1,5 +1,5 @@
 const handler = async (m, {conn, text}) => {
-  m.reply(`*TU DESTINO SERA*
+  m.reply(`*Consejos que te ayudarán*
  ${pickRandom(global.destino)}`);
 };
 handler.tags = ['Destino'];
@@ -10,4 +10,4 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())];
 }
 
-global.destino = ['Pronto serás rico', 'Con dios todo se puede', 'Solo confía en ti mismo'];
+global.destino = ['Pronto serás rico', 'Solo confía en ti mismo', 'Con dios todo se puede'];
