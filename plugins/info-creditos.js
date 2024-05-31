@@ -10,7 +10,7 @@ handler.before = async m => {
 if (/^colaboradores|Colaboradores$/i.test(m.text) ) {
 let texto = `🚩 *GitHub - Del creador*
 
-⬡ https://github.com/eliad1524
+⬡ https://github.com/elias1524
 
 _NO TE OLVIDES DE SEGUIRME Y DEJARME UNA 🌟 AL REPO_`
 
