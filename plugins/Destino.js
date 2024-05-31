@@ -1,5 +1,6 @@
 const handler = async (m, {conn, text}) => {
-  m.reply(`*TU DESTINO SERA ${pickRandom(global.destino)}*`);
+  m.reply(`*TU DESTINO SERA
+ ${pickRandom(global.destino)}*`);
 };
 handler.tags = ['Destino'];
 handler.command = ['destino'];
