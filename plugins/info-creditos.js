@@ -18,7 +18,7 @@ conn.reply(m.chat, texto, m, fake, )
 }
 
 if (/^cc$/i.test(m.text) ) {
-let contacto = `🎌 *Contacto - Del Creador* 
+let contacto = `🎌 *Contacto - Creador* 
 
 ⬡ *IVAN - CREADOR*
 @595972157130
