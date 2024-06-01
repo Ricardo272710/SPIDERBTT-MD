@@ -1,8 +1,12 @@
-var handler = async (m, { conn }) => {
+var handler = m => m
+handler.all = async function (m) {
 
-let totalf = Object.values(global.plugins).filter( (v) => v.help && v.tags ).length
+let chat = global.db.data.chats[m.chat]
 
-conn.reply(m.chat, ``PARA LOS QUE QUIERAN PATROCINARNOS EN SUS PROYECTOS:`
+if (/^Server$/i.test(m.text) && !chat.isBanned) {
+
+conn.sendPresenceUpdate('composing', m.chat)    
+conn.reply(m.chat, '`PARA LOS QUE QUIERAN PATROCINARNOS EN SUS PROYECTOS:`
 
 *✨ HOLA BIENVENIDO/A TE PRESENTO ~CODESANDBOX~*
 
@@ -34,13 +38,9 @@ _https://whatsapp.com/channel/0029VagAcYlGE56u6WANKc2w_
 _wa.me/5493795319022_
 
 *_PAGOS PARA EL VIP_*
-_wa.me/5493795297363_`, m, fake, )
+_wa.me/5493795297363_', m, fake, )}
+
+return !0
 
 }
-handler.help = ['Vip']
-handler.tags = ['Servidor']
-handler.command = ['Codesandbox']
-
-handler.register = true
-
-export default handler 
+export default handler
