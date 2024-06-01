@@ -2,7 +2,7 @@ let handler = (m) => m;
 handler.all = async function (m) {
 
 
-  if (/^Diegol|Diego|Diego|Diego|Diego|Diegol$/i.test(m.text)) {
+  if (/^Eliasl|Elias|Elias|Elias|Elias|Elias$/i.test(m.text)) {
     var ax = `Whaos ese es mi creador  @${global.suittag=595972157130}`;
 
 
