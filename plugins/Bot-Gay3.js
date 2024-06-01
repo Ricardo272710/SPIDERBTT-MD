@@ -9,17 +9,17 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         //const url = 'https://www.youtube.com/watch?v=' + videoId
         m.react('🎧')
         let play = `┏━━━━━━━━━━━━━━━━━━━
- 📌 *Título* : ${title}
+ 👾 *Título* : ${title}
 ┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━   
- 📆 *Publicado:* ${ago}
+ 🗓️ *Publicado:* ${ago}
 ┃━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
- ⌚ *Duración:* ${timestamp}
+ ⌛ *Duración:* ${timestamp}
 ┃ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
- 👀 *Vistas:* ${views}
+ 👁️ *Vistas:* ${views}
 ┗━━━━━━━━━━━━━━━━━━━`
  await conn.sendButton(m.chat, play, fgig, thumbnail, [
-    ['🍧 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🍿 MP4', `${usedPrefix}fgmp4 ${url}`]
+    ['🍄 MP3', `${usedPrefix}fgmp3 ${url}`],
+    ['🍁 MP4', `${usedPrefix}fgmp4 ${url}`]
   ], m)
 }
 handler.help = ['bot']
