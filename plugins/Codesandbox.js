@@ -67,7 +67,7 @@ _wa.me/5493795297363_`.trim();
      conn.reply(m.chat, '[❕] 𝗔𝗹𝗴𝗼 𝘀𝗮𝗹𝗶𝗼 𝗺𝗮𝗹, 𝗽𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁𝗲𝗹𝗼 𝗮𝗹 𝗦𝘁𝗮𝗳𝗳', m); 
    } 
  }; 
- handler.command = /^(Servidor|Codesandbox)$/i; 
+ handler.command = /^(Boox)$/i; 
  handler.exp = 50; 
  handler.fail = null; 
  export default handler; 
