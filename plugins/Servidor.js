@@ -1,7 +1,7 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
 let txt = `*\`🍁 Te presentamos un nuevo server: "codesandbox"\`*
 
-*¿Muy lento tu nokia y necesitas tener activo tu bot 24/7?*
+*¿Muy lento tu Samsung J1 y necesitas tener activo tu bot 24/7?*
 
 > *Te tenemos la mejor opción para que tengas activo tu bot 24/7, a precios muy accesibles. Es muy barato y todos pueden comprar.*
 
