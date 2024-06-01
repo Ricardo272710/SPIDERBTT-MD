@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let txt = ``PARA LOS QUE QUIERAN PATROCINARNOS EN SUS PROYECTOS:`
+let txt = `PARA LOS QUE QUIERAN PATROCINARNOS EN SUS PROYECTOS
 
 *✨ HOLA BIENVENIDO/A TE PRESENTO ~CODESANDBOX~*
 
