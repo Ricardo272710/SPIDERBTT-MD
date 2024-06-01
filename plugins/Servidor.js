@@ -32,7 +32,7 @@ isForwarded: false,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: `🌻 CODESANDBOX 🍁`,
+title: `🍁 CODESANDBOX 🍁`,
 body: `✔️ Servidor de Calidad`,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://telegra.ph/file/37478c04c4abeb4d02f80.jpg', 
