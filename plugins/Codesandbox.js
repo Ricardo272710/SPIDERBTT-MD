@@ -37,9 +37,9 @@ _wa.me/5493795297363_`
 conn.reply(m.chat, str, m, fake, )
 
 }
-handler.help = ['Servidor', 'Codesandbox', 'Sandbox']
+handler.help = ['Quiero', 'Lento', 'Code']
 handler.tags = ['info']
-handler.command = /^Servidor|Codesandbox|Sandbox$/i
+handler.command = /^Quieroo|Lento|Code$/i
 
 handler.register = true
 
