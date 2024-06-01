@@ -24,7 +24,10 @@ Precio: Solo acordado y dado por el creador nada mas
 https://codesandbox.io/dashboard
 
 💙 *Canal de WhatsApp:*
-https://whatsapp.com/channel/0029VaanL8K4yltYHri0ea3K`
+https://whatsapp.com/channel/0029VaanL8K4yltYHri0ea3K
+
+📱 *Contacto*
+wa.me/5493794297363`
 await conn.sendMessage(m.chat, { text: txt,
 contextInfo:{
 forwardingScore: 9999999,
