@@ -1,37 +1,38 @@
-/*              Codigo Creado Por Bruno Sobrino 
-      (https://github.com/BrunoSobrino/TheMystic-Bot-MD) 
-*/
-
-let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
-if (!args[0]) return m.reply(`${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
-if (isNaN(args[0])) return m.reply(`${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
-let lol = args[0].replace(/[+]/g, '')
-let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol)) 
-let bot = global.db.data.settings[conn.user.jid] || {}
-if (ps == '') return m.reply(`${lenguajeGB['smsAvisoAG']()}𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙉𝙊 𝙃𝘼𝙔 𝙉𝙄𝙉𝙂𝙐𝙉 𝙉𝙐́𝙈𝙀𝙍𝙊 𝘾𝙊𝙉 𝙀𝙇 𝘼𝙍𝙀𝘼/𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol}*`)
-let numeros = ps.map(v=> '➥ @' + v.replace(/@.+/, ''))
-const delay = time => new Promise(res=>setTimeout(res,time));
-switch (command) {
-case "listanum": 
-conn.reply(m.chat, `⚠️ 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝘾𝙊𝙉 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol} 𝙌𝙐𝙀 𝙀𝙎𝙏𝘼𝙉 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 ⚠️\n\n` + numeros.join`\n`, m, { mentions: ps })
-break   
-case "kicknum":  
-if (!bot.restrict) return m.reply(`${lenguajeGB['smsAvisoAG']()} ${lenguajeGB['smsSoloOwner']()}`) 
-if (!isBotAdmin) return m.reply(`${lenguajeGB['smsAvisoAG']()} ${lenguajeGB['smsAllAdmin']()}`)          
-conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘾𝙄𝙊́𝙉 𝘿𝙀 𝙉𝙐́𝙈𝙀𝙍𝙊 𝘾𝙊𝙉 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol}, 𝘾𝘼𝘿𝘼 10 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎 𝙎𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝘼 𝘼 𝙐𝙉 𝙐𝙎𝙐𝘼𝙍𝙄𝙊`, m)            
-let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net'
-let users = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol))
-for (let user of users) {
-let error = `@${user.split("@")[0]} 𝙔𝘼 𝙃𝘼 𝙎𝙄𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 𝙊 𝙃𝘼 𝘼𝘽𝘼𝙉𝘿𝙊𝙉𝘼𝘿𝙊 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 :v`    
-if (user !== ownerGroup + '@s.whatsapp.net' && user !== global.conn.user.jid && user !== global.owner + '@s.whatsapp.net' && user.startsWith(lol || lol) && user !== isSuperAdmin && isBotAdmin && bot.restrict) { 
-await delay(2000)    
-let responseb = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
-if (responseb[0].status === "404") m.reply(error, m.chat, { mentions: conn.parseMention(error)})  
-await delay(10000)
-} else return m.reply(`${lenguajeGB['smsAvisoFG']()}`)}
-break            
-}}
-handler.command = /^(listanum|kicknum)$/i
-handler.group = handler.botAdmin = handler.admin = true
-handler.fail = null
+import { randomBytes } from 'crypto'
+let handler = async (m, { conn, command, participants, usedPrefix, text }) => {
+if (!text && !m.quoted) return m.reply(lenguajeGB.smsBCMensaje(usedPrefix, command))        
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${conn.user.jid.split('@')[0]}:${conn.user.jid.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" } 
+let users = participants.map(u => conn.decodeJid(u.id))
+let cc2 = text ? m : m.quoted ? await m.getQuotedObj() : false || m
+let teks2 = text ? text : cc2.text 
+let d = new Date(new Date + 3600000)
+let locale = lenguajeGB.lenguaje()
+let dia = d.toLocaleDateString(locale, { weekday: 'long' })
+let fecha = d.toLocaleDateString(lenguajeGB.lenguaje(), { day: 'numeric', month: 'numeric', year: 'numeric' })
+let mes = d.toLocaleDateString(lenguajeGB.lenguaje(), { month: 'long' })
+let año = d.toLocaleDateString(lenguajeGB.lenguaje(), { year: 'numeric' })
+let tiempo = d.toLocaleString('es-CO', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
+let groups = Object.keys(await conn.groupFetchAllParticipating())
+let usersTag = participants.map(u => conn.decodeJid(u.id))
+let readMS = String.fromCharCode(8206).repeat(850)
+await m.reply(lenguajeGB.smsChatGP1())   
+for (let i = 0; i < groups.length; i++) {
+const id = groups[i];
+const infoGP = lenguajeGB.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
+const delay = i * 4000 //4 seg
+setTimeout(async () => { 
+await conn.sendMessage(id, { text: infoGP + teks2, mentions: [m.sender], mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }, { quoted: fkontak }) 
+//await conn.reply(id, infoGP + teks2, { mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }, { quoted: fkontak });
+}, delay)}         
+let totalGP = groups.length
+await m.reply(lenguajeGB.smsChatGP3(totalGP))
+}     
+handler.help = ['broadcastgroup', 'bcgc'].map(v => v + ' <teks>')
+handler.tags = ['owner']
+handler.command = /^(broadcast|bc)(group|grup|gc)$/i
+handler.owner = true
 export default handler
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+const delay = time => new Promise(res => setTimeout(res, time))
