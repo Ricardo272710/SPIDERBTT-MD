@@ -1,27 +1,17 @@
-import fetch from 'node-fetch'; 
- const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => { 
-   if (usedPrefix == 'a' || usedPrefix == 'A') return; 
-   try { 
-     const pp = imagen1; 
-     // let vn = './media/menu.mp3' 
-     const img = './Menu2.jpg'; 
-     const d = new Date(new Date + 3600000); 
-     const locale = 'es'; 
-     const week = d.toLocaleDateString(locale, {weekday: 'long'}); 
-     const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'}); 
-     const _uptime = process.uptime() * 1000; 
-     const uptime = clockString(_uptime); 
-     const user = global.db.data.users[m.sender]; 
-     const {money, joincount} = global.db.data.users[m.sender]; 
-     const {exp, limit, level, role} = global.db.data.users[m.sender]; 
-     const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length; 
-     const more = String.fromCharCode(8206); 
-     const readMore = more.repeat(850); 
-     const url = global.md 
-     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0]; 
-     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document']; 
-     const document = doc[Math.floor(Math.random() * doc.length)]; 
-     const str = ``PARA LOS QUE QUIERAN PATROCINARNOS EN SUS PROYECTOS:`
+import fetch from 'node-fetch';
+const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
+  try {
+  if (usedPrefix == 'a' || usedPrefix == 'A') return;
+
+  const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'});
+  const {money, joincount} = global.db.data.users[m.sender];
+  const {exp, limit, level, role} = global.db.data.users[m.sender];
+  const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png');
+  const fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}};
+    await conn.reply(m.chat, 'Em breve te envio información sobre el server', m, { contextInfo:{ forwardingScore: 2024, isForwarded: true, externalAdReply: {title: '👋 ᕼOᒪᗩ!!', body: 'sɪɢᴜᴇᴍᴇ ᴇɴ ɪɴsᴛᴀɢʀᴀᴍ', sourceUrl: global.channel, thumbnail: await (await fetch(pp)).buffer() }}})
+//m.react('📡');
+    await conn.sendMessage(m.chat, { react: { text: '📡', key: m.key } })
+  let txt =``PARA LOS QUE QUIERAN PATROCINARNOS EN SUS PROYECTOS:`
 
 *✨ HOLA BIENVENIDO/A TE PRESENTO ~CODESANDBOX~*
 
@@ -53,27 +43,14 @@ _https://whatsapp.com/channel/0029VagAcYlGE56u6WANKc2w_
 _wa.me/5493795319022_
 
 *_PAGOS PARA EL VIP_*
-_wa.me/5493795297363_`.trim(); 
-     if (m.isGroup) { 
-       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
-       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}; 
-       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m}); 
-     } else { 
-       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
-       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}; 
-       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2}); 
-     } 
-   } catch { 
-     conn.reply(m.chat, '[❕] 𝗔𝗹𝗴𝗼 𝘀𝗮𝗹𝗶𝗼 𝗺𝗮𝗹, 𝗽𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁𝗲𝗹𝗼 𝗮𝗹 𝗦𝘁𝗮𝗳𝗳', m); 
-   } 
- }; 
- handler.command = /^(servidor|Code)$/i; 
- handler.exp = 50; 
- handler.fail = null; 
- export default handler; 
- function clockString(ms) { 
-   const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000); 
-   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60; 
-   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60; 
-   return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(':'); 
-       }
+_wa.me/5493795297363_`;
+   await conn.sendMessage(m.chat, {text: txt.trim(), mentions: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...txt.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": '乂 𝙱 𝙰 𝙸 𝙻 𝙴 𝚈 - 𝙱 𝙾 𝚃 - 𝙼 𝙳 乂', "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen2, "mediaUrl": global.channel, "sourceUrl": global.gp1}}}, {quoted: fkon});
+ // m.react('📡');
+  } catch {
+    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝙿𝙾𝚁𝙵𝙰𝚅𝙾𝚁 𝚄𝚂𝙴 𝙴𝙻 .allmenu*', m);
+  }
+};
+handler.help = ['menu'];
+handler.tags = ['menu'];
+handler.command = /^(lServi|Code|Codesandbox)$/i;
+export default handler;
