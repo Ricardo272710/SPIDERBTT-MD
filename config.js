@@ -10,7 +10,8 @@ import { fileURLToPath, pathToFileURL } from 'url'
  global.owner = [
 ['595972157130', '⺪⃢łV₳₦🇵🇾⃢乂', true],
 ['51929972576', 'Axx', true],
-['5491168758497', '༊⃢ＳＩＣＫ•ᴇɴᴢᴏ ᴍᴀᴛɪᴀꜱ༃⃢🇦🇷', true]]
+['5491168758497', '༊⃢ＳＩＣＫ•ᴇɴᴢᴏ ᴍᴀᴛɪᴀꜱ༃⃢🇦🇷', true],
+['573001358918', 'Gabriel', true]]
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
@@ -26,10 +27,10 @@ global.isdev = [ /* ['5217294888993'], */ ['5214434703586'], ['5492266466080'], 
 
 global.packname = '🌸 Goku-Black-Bot-MD🐼'
 global.author = '⺪⃢łV₳₦🇵🇾⃢乂'
-global.wm = '🌼 Goku-Black-Bot-MD 🍧'
-global.wm2 = '🍁 Goku-Black-Bot-MD 🌸'
+global.wm = ' ✨ 𝐆𝐨𝐤𝐮-𝐁𝐥𝐚𝐜𝐤-𝐁𝐨𝐭-𝐌𝐃 💥'
+global.wm2 = '☄️ 𝑮𝒐𝒌𝒖-𝑩𝒍𝒂𝒄𝒌-𝑩𝒐𝒕-𝑴𝑫 🌟'
 global.jxtxn = '⺪⃢łV₳₦🇵🇾⃢乂'
-global.cb = '🌸 Goku-Black-Bot-MD 💖'
+global.cb = '🍧 𝙶𝚘𝚔𝚞-𝙱𝚕𝚊𝚌𝚔-𝙱𝚘𝚝-𝙼𝙳 🍭'
 
 global.vs = '1.0.2'
 global.library = 'Baileys'
