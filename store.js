@@ -54,7 +54,7 @@ global.Lobo = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd' //Lobo OFC
 global.nnn = 'https://chat.whatsapp.com/Igsky5kNI7cDMsBJU6gcKB' //Bailey global
 global.channel = 'https://whatsapp.com/channel/0029VaYh3Zm4dTnQKQ3VLT0h' //BaileyBot-MD
 global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
-global.fgig = 'Sigue nuestro Canal apretando las mini letras azules!!'
+global.fgig = 'Sigue el canal de Goku-Black-Bot-MD'
 global.linkSity = [yt, ig, md, paypal, git, nn]
 
 //Raíz
