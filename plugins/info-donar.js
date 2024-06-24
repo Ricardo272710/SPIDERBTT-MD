@@ -1,16 +1,12 @@
 var handler = async (m, { conn, command }) => {
 
-let str = `🚩 *Donar*
-*Puedes donar números comunicandote con el dueño del bot*
-⬡ *Para donar números 👇*
-${paypal}
+let str = `> 👑 Gracias por apoyar este bot
+> ✨ Gracias a tu colaboración 🪙 el bot seguira en constantes actualizaciónes mejoradas 🎨, puede comprar servidores tambien, 🟢 funcionalidad, 👥 grupos con bot, ✅ rapido y seguro, 🤖 bot en 24/7, 🌍 precios aceptables, 🍷 mas funciones solo lo podras encontrar en: 🌌 \`𝙶𝚘𝚔𝚞-𝙱𝚕𝚊𝚌𝚔-𝙱𝚘𝚝-𝙼𝙳\` 🌌
 
-⬡ *Creador del bot*
-wa.me/51929972576
+> Puedes Donarme números también 
 
-_Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
-https://github.com/Jxtxn17/BaileyBot-MD
-*By Axx*`
+> \`Mandar pruebas en captura:\`
+> https://wa.me/595972157130`
 
 conn.reply(m.chat, str, m, fake, )
 
