@@ -22,20 +22,20 @@ global.prems = []
 //Solo desarrolladores aprobados
 global.isdev = [ /* ['5217294888993'], */ ['5214434703586'], ['5492266466080'], ['5492266613038'], ['573012482597'], ['5215610314499'], ['51935531943'], ['33760536110'], ['5492964650915'], ['50558124470'], ['573012482597']]
 
-global.packname = '🌸 Goku-Black-Bot-MD🐼'
-global.author = '⺪⃢łV₳₦🇵🇾⃢乂'
-global.wm = ' ✨ 𝐆𝐨𝐤𝐮-𝐁𝐥𝐚𝐜𝐤-𝐁𝐨𝐭-𝐌𝐃 💥'
-global.wm2 = '☄️ 𝑮𝒐𝒌𝒖-𝑩𝒍𝒂𝒄𝒌-𝑩𝒐𝒕-𝑴𝑫 🌟'
-global.jxtxn = '⺪⃢łV₳₦🇵🇾⃢乂'
-global.cb = '🍧 𝙶𝚘𝚔𝚞-𝙱𝚕𝚊𝚌𝚔-𝙱𝚘𝚝-𝙼𝙳 🍭'
+global.packname = '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊 𝙍.𝘼 𝙎𝙋𝙄𝘿𝙀𝙍-𝙈𝘿'
+global.author = 'BY RICARDO-ANTHONY'
+global.wm = ' 𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊 𝙍.𝘼 𝙎𝙋𝙄𝘿𝙀𝙍-𝙈𝘿'
+global.wm2 = '𝙋𝙍𝙊𝙔𝙀𝘾𝙏𝙊 𝙍.𝘼 𝙎𝙋𝙄𝘿𝙀𝙍-𝙈𝘿'
+global.jxtxn = 'BY RICARDO-ANTHONY'
+global.cb = 'BY RICARDO-ANTHONY'
 
 global.vs = '1.0.2'
 global.library = 'Baileys'
 global.baileys = '@whiskeysockets/baileys'
 global.lenguaje = 'Español'
 global.menudi = ['⛶','❏','⫹⫺']
-global.dev = 'BY ⺪⃢łV₳₦🇵🇾⃢乂'
-global.devnum = '+595972157130'
+global.dev = 'BY RICARDO-ANTHONY'
+global.devnum = '+593979133620'
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => { unwatchFile(file)
