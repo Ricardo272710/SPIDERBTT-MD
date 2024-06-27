@@ -42,19 +42,19 @@ global.img14 = 'https://telegra.ph/file/dcd01728e3c069a6654f2.jpg'
 global.ImgAll = [img, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14]
 
 //Enlaces
-global.yt = 'https://www.youtube.com/@Azami_Mods'
-global.ig = 'https://www.instagram.com/b.jxtxn17'
+global.yt = ''
+global.ig = 'https://www.instagram.com/proyecto_r.a_'
 global.md = 'https://github.com/elias1524/Goku-Black-Bot-MD'
-global.paypal = '+595972157130'
+global.paypal = '+593979133620'
 global.git = 'https://github.com/elias1524'
-global.nn = 'https://chat.whatsapp.com/Igsky5kNI7cDMsBJU6gcKB' //Grupo ofc
-global.Curiosity = 'https://chat.whatsapp.com/LCAUbkf5kUz7jSxO6FADMU' //Curiosity OFC
-global.hachiko = 'https://chat.whatsapp.com/LRQdtS7nKt89NBUPWJDjzh' //Hachiko OFC
-global.Lobo = 'https://chat.whatsapp.com/Li46EUQhA5tJqXEENfKPJd' //Lobo OFC
-global.nnn = 'https://chat.whatsapp.com/Igsky5kNI7cDMsBJU6gcKB' //Bailey global
-global.channel = 'https://whatsapp.com/channel/0029VaYh3Zm4dTnQKQ3VLT0h' //BaileyBot-MD
-global.nnnn = 'https://chat.whatsapp.com/KLpYFsitkgzJ15YQxZrBqO' //colaboración multi bots
-global.fgig = 'Sigue el canal de Goku-Black-Bot-MD'
+global.nn = '' 
+global.Curiosity = ''
+global.hachiko = ''
+global.Lobo = '' 
+global.nnn = '' 
+global.channel = ''
+global.nnnn = '' //colaboración multi bots
+global.fgig = 'Comunicate con el creador de bot'
 global.linkSity = [yt, ig, md, paypal, git, nn]
 
 //Raíz
