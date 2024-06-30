@@ -1,5 +1,6 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let txt = `╭──────⚔──────╮
+let txt = `
+╭──────⚔──────╮
 ㅤㅤㅤ8 𝐕𝐄𝐑𝐒𝐔𝐒 8
 ╰──────⚔──────╯
 ╭──────────────╮
@@ -26,8 +27,7 @@ let txt = `╭──────⚔──────╮
 │ㅤʚ 𝐒𝐔𝐏𝐋𝐄𝐍𝐓𝐄:
 │⚜️ ➤ 
 │⚜️ ➤ 
-╰─────────────╯
-               `
+╰─────────────╯`
 await conn.sendMessage(m.chat, { text: txt,
 contextInfo:{
 forwardingScore: 9999999,
@@ -35,8 +35,8 @@ isForwarded: false,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: vs8,
-body: vs8,
+title: `12vs12`,
+body: `12vs12`,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://telegra.ph/file/a76519a488755d9dd6097.jpg', 
 sourceUrl: ''}}},
@@ -44,5 +44,5 @@ sourceUrl: ''}}},
 }
 handler.tags =['info'] 
 handler.help = ['codesandbox', 'Servidor', 'Obte'] 
-handler.command = /^(sandbox|8vs8|vs8|sand|server)$/i
+handler.command = /^(sandbox|8vs8|sand|server)$/i
 export default handler
