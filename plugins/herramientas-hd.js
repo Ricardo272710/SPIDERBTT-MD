@@ -4,14 +4,20 @@ const handler = async (m, {conn, usedPrefix, command}) => {
  try {    
   let q = m.quoted ? m.quoted : m;
   let mime = (q.msg || q).mimetype || q.mediaType || "";
-  if (!mime) throw `🍃 Envie una imagen o responda a la imagen utilizando el comando: ${usedPrefix + command}`;
-  if (!/image\/(jpe?g|png)/.test(mime)) throw `🍂 El formato del archivo (${mime}) no es compatible, envía o responda a una imagen`;
-  m.reply("🍃 *Espere Un Momento*\n- *🌺 𝙈𝙀𝙅𝙊𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 𝘾𝘼𝙇𝙄𝘿𝘼𝘿...*");
+  if (!mime) return m.reply(`🍃 Envie una imagen o responda a la imagen utilizando el comando: ${usedPrefix + command}`);
+  if (!/image\/(jpe?g|png)/.test(mime)) return m.reply(`🍂 El formato del archivo (${mime}) no es compatible, envía o responda a una imagen`);
+ // conn.reply(m.chat, '🍃 *Espere Un Momento*\n- *🌺 𝙈𝙀𝙅𝙊𝙍𝘼𝙉𝘿𝙊 𝙇𝘼 𝘾𝘼𝙇𝙄𝘿𝘼𝘿...*', m, rcanal);
+  conn.reply(m.chat, wait, m, {
+  contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
+  title: packname,
+  body: wm,
+  previewType: 0, thumbnail: icons,
+  sourceUrl: channel }}})
   let img = await q.download?.();
   let pr = await remini(img, "enhance");
   conn.sendMessage(m.chat, {image: pr}, {quoted: fkontak});
  } catch {
-  throw "🛑 Ocurrió Un Error Inesperado";
+ return m.reply("✨️ Ocurrió Un Error Inesperado 💌");
  }
 };
 handler.help = ["remini", "hd", "enhance"];
