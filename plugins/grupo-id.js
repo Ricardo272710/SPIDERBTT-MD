@@ -5,7 +5,7 @@ conn.reply(m.chat, `${await groupMetadata.id}`, fkontak, fake, )
 }
 handler.help = ['idgc']
 handler.tags = ['grupo']
-handler.command = /^(cekid|idgc|gcid)$/i
+handler.command = /^(cekid|id|idgc|gcid)$/i
 
 handler.group = true
 
