@@ -35,8 +35,8 @@ isForwarded: false,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: 8vs8,
-body: 8vs8,
+title: vs8,
+body: vs8,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://telegra.ph/file/a76519a488755d9dd6097.jpg', 
 sourceUrl: ''}}},
@@ -44,5 +44,5 @@ sourceUrl: ''}}},
 }
 handler.tags =['info'] 
 handler.help = ['codesandbox', 'Servidor', 'Obte'] 
-handler.command = /^(sandbox|8vs8|sand|server)$/i
+handler.command = /^(sandbox|8vs8|vs8|sand|server)$/i
 export default handler
