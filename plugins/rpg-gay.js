@@ -5,7 +5,7 @@ const pp = './storage/logos/Menu2.jpg'
 
 let love = `
 ┏──────────────┓
-┃ *BaileyBot-MD*
+┃ *spiderBot-MD*
 ┌─────⊱◈◈◈⊰─────
 ┃🏳‍🌈 ${name} es: *${Math.floor(Math.random() * 100)}%* Gay
 ┃
