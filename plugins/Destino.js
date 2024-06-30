@@ -2,8 +2,8 @@ const handler = async (m, {conn, text}) => {
   m.reply(`*Consejos que te ayudarán*
  ${pickRandom(global.destino)}`);
 };
-handler.tags = ['Destino'];
-handler.command = ['destino'];
+handler.tags = ['Salas'];
+handler.command = ['salas'];
 export default handler;
 
 function pickRandom(list) {
