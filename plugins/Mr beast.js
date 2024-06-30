@@ -2,7 +2,7 @@ const handler = async (m, {conn}) => {
   m.reply(global.millon);
   m.reply(global.millon);
 };
-handler.command = /^(16vs16|Millon|ser)$/i;
+handler.command = /^(16|1616|16vs16)$/i;
 export default handler;
 
 global.millon = `
